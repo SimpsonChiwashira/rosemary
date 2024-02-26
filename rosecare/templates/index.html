@@ -1,0 +1,132 @@
+{% extends "base.html" %} {% block title %} Home {% endblock %}
+{% load static %}
+{% block nav %} 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between" id="mainNav">
+    <div class="container px-5">
+        <a class="navbar-brand" href="/"><img src="{% static 'images/logo.png' %}" width="120" alt="nav-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>  
+                <li></li>
+            </ul>
+            
+               
+        </div>
+    </div>
+</nav>
+
+
+{% endblock %}
+{% block content %}
+<!-- Banner Area -->
+<section class="home_banner_area">
+    <div class="banner_inner">
+        <div class="container">
+            <div class="banner_content">
+                <img src="{% static 'images/logo.png' %}"  alt="nav-logo">
+                <p class="upper_text"></p>
+                <h2></h2>
+                
+                <a class="btn btn-primary" href="{% url 'about' %}">Read more!</a>
+                <a class="btn btn-primary" href="{% url 'contact' %}">Contact Us</a>               
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+<!--End of baner area-->
+
+
+
+
+
+
+<!--   Front Part  
+
+<div class="row gx-4 gx-lg-5 align-items-center my-5">
+    <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.rhuncovered.co.uk/wp-content/uploads/2020/12/carer-980x551.jpg" alt="..." /></div>
+    <div class="col-lg-5">
+        <h1 class="font-weight-light">Rosemary Health Care </h1>
+        <p>Our mission is to empower individuals with diverse abilities to live fulfilling lives by providing personalized, compassionate support within a nurturing and inclusive community. We are dedicated to fostering independence, dignity, and meaningful connections, ensuring each person's journey is respected and celebrated.</p>
+        <a class="btn btn-primary" href="{% url 'about' %}">Read more!</a>
+    </div>
+    </div>
+</div>
+-->
+<!-- Call to Action-->
+<div class="card text-white bg-dark my-5 py-4 text-center">
+    <div class="card-body"><p class="text-white m-0 lead">We have caring hearts and trusted hands. We take pride in the work we do by providing world class care. Do you have what it takes to give care? Do you wish to take your next step in care giving? Go ahead and create an account and join us. </p></div>
+   <!-- <form class="form-inline" action="{% url 'about' %}">
+        <button class="btn btn-primary" type="button"></a>
+        </a></button>
+        <button class="btn btn-primary" type="button"><a href="#"></a></button>
+      </form> -->
+</div>
+<!-- Content Row-->
+<div class="row gx-4 gx-lg-5">
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <figure>
+                    <img class="card-img-top img-fluid" src="https://www.bigheartshomecare.ca/wp-content/uploads/2021/02/bh-caregiver-grid-001.jpg" alt="Card image cap">
+                </figure>
+                <h2 class="card-title">Supported Care Services</h2>
+                <p class="card-text lead">As a family run company with over 30 years experience in the Care industry, we at Rosemary Healthcare have the knowledge and expertise to support you and your loved ones with all your care needs.</p>
+            </div>
+            <div class="text-center"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">Learn More</a></div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <figure>
+                    <img class="card-img-top img-fluid" src="https://th.bing.com/th/id/OIP.HlCVgwIF4Ivt6avTzpfWHwHaHa?rs=1&pid=ImgDetMain" alt="Card image cap">
+                </figure>
+                <h2 class="card-title">Comprehensive Services</h2>
+                <p class="card-text lead">Our caregivers are trained to assist with a wide range of activities, including personal care, medication management, companionship, meal preparation, light housekeeping, and more. We aim to provide holistic care that enhances the overall quality of life for your loved ones.</p>
+            </div>
+            <div class="text-center"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">Learn More</a></div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <figure>
+                    <img class="card-img-top img-fluid" src="https://www.dadorseytech.edu/wp-content/uploads/2020/08/Patient-Care-Assistant-480x480.jpg" alt="Card image cap">
+                </figure>
+                <h2 class="card-title">Why Choose us?</h2>
+                <p class="card-text lead">Our team of carers undergoes rigorous training to ensure they possess the necessary skills and knowledge to provide top-notch care. We carefully select individuals who are not only experienced but also genuinely compassionate, treating your loved ones with the utmost respect and dignity.</p>
+            </div>
+            <div class="text-center"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">Learn More</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<section class="bg-light py-5">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+            <h2>Our Story</h2>
+                <p class="lead">Learn More about our history to understand how we came up and how much we care, hear from our Founder.
+                </p>
+        </div>
+</section>
+<div class="container px-5">
+<div class="row gx-4 gx-lg-5 align-items-center my-5">
+    <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'images/director.jpg' %}" alt="..." /></div>
+    <div class="col-lg-5">
+        <h1 class="font-weight-light">How much caring means to us?</h1>
+        <p class="">Dedicated and compassionate Registered Nurse with over 35 years of experience in the National Health Service (NHS) and private healthcare settings. Skilled in providing high-quality patient-centred care, collaborating with multidisciplinary teams, and utilizing evidence-based practice to improve outcomes. Seeking to contribute my expertise and passion for nursing to a dynamic healthcare environment. My passion for nursing stems from a desire to make a positive difference in the lives of others. I believe that every individual deserves to be treated with dignity, respect, and compassion, regardless of their circumstances. Whether caring for a newborn in the neonatal intensive care unit or supporting an elderly patient in a long-term care facility, I approach each encounter with empathy, kindness, and professionalism.</p>
+        <p class=""></p>
+    </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

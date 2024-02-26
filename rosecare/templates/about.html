@@ -1,0 +1,153 @@
+{% extends "base.html" %} {% block title %} About Us {% endblock %}
+{% load static %}
+{% block nav %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+    <div class="container px-5">
+        <a class="navbar-brand" href="/"><img src="{% static 'images/logo.png' %}" width="120" alt="nav-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link"  href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a></li>
+                <li class="nav-item"><a class="nav-link"  href="{% url 'contact' %}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>  
+                <li></li>
+            </ul>
+            
+               
+        </div>
+    </div>
+</nav>
+{% endblock %}
+{% block content %}
+<header class="bg-light py-5">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+            <h2>About Us</h2>
+                <p class="lead">Who is Rosemary Healthcare? How can we help?
+                </p>
+        </div>
+    </div>
+</header>
+<div class="row gx-4 gx-lg-5 align-items-center my-5">
+    <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.socialcare.co.uk/Images/Blog/media/22163a28-7e6a-4e26-973e-859243cb21da.jpg" alt="..." /></div>
+    <div class="col-lg-5">
+        <h1 class="font-weight-light">What is our mission statement?</h1>
+        <p class="lead">It is to empower individuals with diverse abilities to live fulfilling lives by providing personalized, compassionate support within a nurturing and inclusive community. We are dedicated to fostering independence, dignity, and meaningful connections, ensuring each person's journey is respected and celebrated.</p>
+    </div>
+    </div>
+</div>
+
+
+<section class="bg-light" id="services">
+    <div class="container px-5">
+        <div class="row gx-4 justify-content-between">
+            <div class="col-lg-6">
+                <h2>Local Authority Safeguarding</h2>
+                <p class="lead">We have polices and procedures for the sharing of safeguarding information amongst other forms of information that might be shared with other agencies and professionals. These are written to comply with confidentiality principles and data protection laws.</p>
+                <p class="lead">The organisation develops its policies and procedures in line with our local Safeguarding Adults Boards (SABs) recommendation and guidance with relevant documentation for raising alerts and staff training.</p>
+
+            </div>
+            <div class="col-lg-6"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.thebarbican.ie/wp-content/uploads/2019/11/Safeguarding-Courses-2019.png" alt="..." /></div>
+            <div class="col-lg-8">
+                <h2></h2>
+                <p class="lead"></p>
+                
+            </div>    
+        </div>
+    </div>
+    
+
+</section>
+<div class="container px-5">
+<div class="row gx-4 gx-lg-5 align-items-center my-5">
+    <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.homeinstead.com/siteassets/corporate/top-quality-care/home-instead-caregivers-provide-top-elderly-care-at-home.jpg" alt="..." /></div>
+    <div class="col-lg-5">
+        <h1 class="font-weight-light">Policy Statement</h1>
+        <p class="lead">The safeguarding policy sets out the following:</p>
+        <ul>
+            <li class="lead">Principles and values underlying our approach to the safeguarding of people receiving care.</li>
+            <li class="lead">Ways in which rosemary healthcare conducts its safeguarding policies.</li>
+            <li class="lead">Steps taken to avoid abuse.</li>
+        </ul>
+        <p class="lead">For more information on our policies, here is a link to <a href="#">download</a> a copy of our policies.</p>
+    </div>
+    </div>
+</div>
+</div>
+<section class="team_area section_gap">
+    <div class="container container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <h2>Meet the team</h2>
+            <p class="lead">These are the team members and their roles</p>
+        </div>
+        <div class="row team_inner">
+            <div class="col-lg-3 col-md-6">
+                <div class="team_item">
+                    <div class="team_img">
+                        <img class="img-fluid" src="{% static 'images/director.jpg' %}" width="720" alt="">
+                    </div>
+                    <div class="team_name">
+                        <h4>Irene Chiwashira</h4>
+                        <p class ="lead">CEO and Founder</p>
+                        <p class="">
+                           
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team_item">
+                    <div class="team_img">
+                        <img class="img-fluid" src="https://scontent.flhr14-1.fna.fbcdn.net/v/t39.30808-6/386235406_6782091641836525_5909841764029917068_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=j30Yd__pZiwAX9YOgf0&_nc_ht=scontent.flhr14-1.fna&oh=00_AfA9cXhziHYwEGHC7STPwTmSWlU75Au4xfsoVEbq0sq3cA&oe=65DB909D" width="720" alt="">
+                    </div>
+                    <div class="team_name">
+                        <h4>Panashe Chisasa</h4>
+                        <p class="lead">Safety and Assurance Manager</p>
+                        <p class="mt-20">
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team_item">
+                    <div class="team_img">
+                        <img class="img-fluid" src="{% static 'images/stue.jpg' %}" width="720" alt="">
+                    </div>
+                    <div class="team_name">
+                        <h4>Stuart Rusenza</h4>
+                        <p class="lead">Team Leader</p>
+                        <p class="mt-20">
+                           
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team_item">
+                    <div class="team_img">
+                        <img class="img-fluid" src="https://scontent.flhr14-1.fna.fbcdn.net/v/t39.30808-6/415224505_6617621915006268_3965894294507220694_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KabYOzK7TR4AX8E84A3&_nc_ht=scontent.flhr14-1.fna&oh=00_AfBUBARONxz8UxbJvdoeRMJQoAZJA8LmOlQ8doY_tCm01A&oe=65DB189D" width="720" alt="">
+                    </div>
+                    <div class="team_name">
+                        <h4>Simpson Chiwashira</h4>
+                        <p class="lead">IT Support Engineer</p>
+                        <p class="mt-20">
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
